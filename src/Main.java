@@ -1,3 +1,5 @@
+package src;
+
 import java.util.Scanner;
 
 public class Main {
@@ -8,19 +10,22 @@ public class Main {
         String choiceTwo = "jupiter";
         String choiceThree = "saturn";
 
-        String correctAnswe = choiceThree;
+        String correctAnswer = choiceTwo;
 
         // Write a print statement asking the question
         System.out.println(question);
 
         // Write a print statement giving the answer choices
         System.out.println("Choose one of the following: " +
-                choiceOne + ", " + choiceTwo + ", or " + choiceThree + ".")
+                choiceOne + ", " + choiceTwo + ", or " + choiceThree + ".");
 
         // Have the user input an answer
         Scanner scanner = new Scanner(System.in);
         // Retrieve the user's input
         String input = scanner.next();
+
+        System.out.println(input);
+        System.out.println(correctAnswer);
 
         // If the user's input matches the correctAnswer...
         // then the user is correct and we want to print out a congrats message to the user.
